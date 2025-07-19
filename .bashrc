@@ -16,6 +16,10 @@ alias hypr='cd ~/.config/hypr'
 
 alias config='/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
 
+alias clear='clear && fastfetch'
+
+alias Settings='cd /home/sebastian/.config/hypr && nvim hyprland.conf'
+
 PS1='[\u@\h \W]\$ '
 
 # Import colorscheme from 'wal' asynchronously
