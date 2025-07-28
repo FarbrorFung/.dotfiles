@@ -22,6 +22,8 @@ alias clear='clear && fastfetch'
 
 alias Settings='cd /home/sebastian/.config/hypr && nvim hyprland.conf'
 
+alias removeorphan='sudo pacman -Rns $(pacman -Qdtq)'
+
 PS1='[\u@\h \W]\$ '
 
 # Import colorscheme from 'wal' asynchronously

@@ -81,7 +81,7 @@
                 "transition-to-left": true,
                 "click-to-reveal": true
             },
-            "modules": ["custom/expand","cpu","memory","custom/endpoint"]
+            "modules": ["custom/expand","cpu","custom/nvidia","memory","custom/endpoint"]
         },
         "cpu": {
             "format": "CPU {}%",
@@ -93,6 +93,11 @@
             "format": "MEM {}%",
 	    "interval": 5
         },
+	"custom/nvidia": {
+    "exec": "nvidia-smi --query-gpu=utilization.gpu,temperature.gpu --format=csv,nounits,noheader | sed 's/\\([0-9]\\+\\), \\([0-9]\\+\\)/\\1% 🌡️\\2°C/g'",
+    "format": "GPU {} 🖥️",
+    "interval": 2
+},
         "tray": {
             "icon-size": 14,
             "spacing": 10
