@@ -7,8 +7,10 @@
 
 eval "$(fzf --bash)"
 
+eval "$(starship init bash)"
+
 # Aliases
-alias ls='ls --color=auto'
+alias ls='ls -l --color=auto'
 alias grep='grep --color=auto'
 
 #Navigation aliases
