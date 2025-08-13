@@ -104,7 +104,7 @@
         },
 
         "pulseaudio":{
-            "format": "{icon}", 
+            "format": "{icon} {volume}%", 
             "on-click-right": "pavucontrol",
             "show-icon": true,
             "format-muted": "",
