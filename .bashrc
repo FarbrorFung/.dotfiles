@@ -20,8 +20,6 @@ alias hypr='cd ~/.config/hypr'
 
 alias config='/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
 
-alias clear='clear && fastfetch'
-
 alias Settings='cd /home/sebastian/.config/hypr && nvim hyprland.conf'
 
 alias removeorphan='sudo pacman -Rns $(pacman -Qdtq)'
